@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,500,700,400italic|Material+Icons">
+    <style>
+@font-face {
+  font-family: "FinkHeavy";
+  src: url("http://localhost:8080/assets/FinkHeavy.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body, #root, .high {
+  height: 100%;
+}
+    </style>
+    <script type="module" src="/lib/index.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <% if (process.env.BROWSER_REFRESH_URL) { %>
+      <script src="<%= process.env.BROWSER_REFRESH_URL %>"></script>
+  <% } %>
+  </body>
+</html>

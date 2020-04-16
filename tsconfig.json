@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "jsx": "preserve",
+    "module": "ESNext",
+    "target": "ESNext",
+    "allowJs": false,
+    "moduleResolution": "node",
+    "noEmit": true,
+    "alwaysStrict": true,
+    "declaration": false,
+    "esModuleInterop": true,
+    "types": [ "node" ],
+    "sourceMap": true,
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "application/*": [ "src/application/*" ],
+      "core/*": [ "src/core/*" ],
+      "domain/*": [ "src/domain/*" ],
+      "infrastructure/*": [ "src/infrastructure/*" ],
+      "presentation/*": [ "src/presentation/*" ]
+    }
+  },
+  "include": [
+    "src/**/*",
+    "@types/**/*",
+    "node_modules/babel-plugin-jsx-control-statements/index.d.ts"
+  ]
+}

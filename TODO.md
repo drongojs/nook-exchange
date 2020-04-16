@@ -1,0 +1,7 @@
+- log in
+- register
+- list requests
+- avatar / user menu
+- toggle island online state
+- edit island
+- log out
